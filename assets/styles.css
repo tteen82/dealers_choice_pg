@@ -1,0 +1,63 @@
+img {
+  width: 80%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  color: black;
+}
+
+nav a.selected {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div {
+  width: 80%;
+}
+
+#error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#error a {
+  font-size: 10rem;
+}
+
+.mouse-over {
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
